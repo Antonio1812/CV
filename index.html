@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="cv-container">
+    <header>
+      <img src="profil.jpeg" alt="Fotografie Nume Prenume" onerror="this.src='https://via.placeholder.com/150?text=Foto'">
+      <h1>Bogorodea Stefan-Antonio</h1>
+      <p>Student – Software Engineering</p>
+    </header>
+
+    <section id="despre-mine">
+      <h2>Despre mine</h2>
+      <p>Sunt un student motivat, dornic să învețe și să se dezvolte într-un mediu profesional. Am o atitudine pozitivă, atenție la detalii și îmi place să găsesc soluții eficiente la probleme. Îmi doresc să îmi valorific cunoștințele acumulate și să contribui activ la proiecte care aduc valoare reală.</p>
+    </section>
+
+    <section id="educatie">
+      <h2>Educație</h2>
+      <p>
+        <strong>Universitatea „Lucian Blaga” din Sibiu</strong><br>
+        Calculatoare și Tehnologia Informației<br>
+        <em>(2023 – prezent)</em>
+      </p>
+      <br>
+      <p>
+        <strong>Liceul „Gheorghe Surdu” din Brezoi</strong><br>
+        Științele Naturii — Diplomă de Bacalaureat<br>
+        <em>(2019 – 2023)</em>
+      </p>
+    </section>
+
+    <section id="abilitati">
+      <h2>Abilități</h2>
+      <ul>
+        <li>C#/C++</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Excel</li>
+        <li>Word</li>
+        <li>PowerPoint</li>
+      </ul>
+    </section>
+
+    <section id="proiecte">
+      <h2>Proiecte</h2>
+
+      <div class="project">
+        <h3>Joc „Nu te supăra, frate!”</h3>
+        <p>Am realizat o aplicație interactivă care reproduce jocul clasic „Nu te supăra, frate!”, dezvoltată în C++ Builder. Proiectul include o interfață grafică intuitivă, sistem de mutare a pionilor bazat pe valorile zarului și verificare automată a regulilor. De asemenea, am implementat o componentă Client–Server, care permite jucarea în rețea între mai multe calculatoare.</p>
+      </div>
+
+      <div class="project">
+        <h3>Proiect 2 — SportMatch (Website web interactiv)</h3>
+        <p>Am dezvoltat platforma SportMatch, o aplicație web creată în PHP, JavaScript și MySQL, care ajută utilizatorii să își găsească parteneri de joc la fotbal, tenis și baschet. Site-ul permite crearea și administrarea camerelor de meci, căutarea altor jucători în funcție de oraș, dată și teren, precum și integrarea cu Google Maps API pentru selectarea locațiilor sportive.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>📞 0757 321 741</li>
+        <li>✉️ stefanantonio.bogorodea@ulbsibiu.ro (Facultate)</li>
+        <li>✉️ bogorodea.stefanantonio@gmail.com (Personal)</li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Bogorodea Stefan-Antonio — CV personal
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
