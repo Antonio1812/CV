@@ -3,81 +3,292 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Bogorodea Stefan-Antonio | CV</title>
+  <meta
+    name="description"
+    content="CV online pentru Bogorodea Stefan-Antonio, student in anul 3 la Calculatoare si Tehnologia Informatiei, cu proiecte software in Java, C++ si PHP."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="cv-container">
-    <header>
-      <img src="profil.jpeg" alt="Fotografie Nume Prenume" onerror="this.src='https://via.placeholder.com/150?text=Foto'">
-      <h1>Bogorodea Stefan-Antonio</h1>
-      <p>Student – Software Engineering</p>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CV online</p>
+        <h1>Bogorodea Stefan-Antonio</h1>
+        <p class="hero-role">Student in anul 3 la Calculatoare si Tehnologia Informatiei</p>
+        <p class="hero-summary">
+          Sunt interesat de dezvoltare software si de modul in care codul bine structurat rezolva
+          probleme concrete. In proiectele universitare am lucrat cu aplicatii web, desktop si
+          client-server, punand accent pe logica, modelarea datelor, validare si organizarea clara
+          a codului.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:bogorodea.stefanantonio@gmail.com">Contact rapid</a>
+          <a class="button button-secondary" href="https://github.com/StefanAntonio10" target="_blank" rel="noreferrer">GitHub personal</a>
+          <a class="button button-secondary" href="https://github.com/Antonio1812" target="_blank" rel="noreferrer">GitHub facultate</a>
+        </div>
+
+        <ul class="hero-metrics">
+          <li>
+            <strong>3 proiecte relevante</strong>
+            <span>experienta in aplicatii web, desktop si client-server</span>
+          </li>
+          <li>
+            <strong>Java, C++, PHP</strong>
+            <span>limbaje folosite in proiecte tehnice si academice</span>
+          </li>
+          <li>
+            <strong>Focus pe software engineering</strong>
+            <span>interes pentru logica, structura, debugging si cod usor de extins</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-panel">
+        <img src="profil.jpeg" alt="Portret Bogorodea Stefan-Antonio" onerror="this.src='https://via.placeholder.com/300x360?text=Foto'">
+        <div class="identity-card">
+          <p class="panel-label">Date rapide</p>
+          <ul class="fact-list">
+            <li>
+              <span>An de studiu</span>
+              <strong>III</strong>
+            </li>
+            <li>
+              <span>Universitate</span>
+              <strong>ULBS</strong>
+            </li>
+            <li>
+              <span>Focus tehnic</span>
+              <strong>Java, C++ si logica</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
-    <section id="despre-mine">
-      <h2>Despre mine</h2>
-      <p>Sunt un student motivat, dornic să învețe și să se dezvolte într-un mediu profesional. Am o atitudine pozitivă, atenție la detalii și îmi place să găsesc soluții eficiente la probleme. Îmi doresc să îmi valorific cunoștințele acumulate și să contribui activ la proiecte care aduc valoare reală.</p>
-    </section>
+    <nav class="section-nav" aria-label="Navigare pagina">
+      <a href="#proiecte">Proiecte</a>
+      <a href="#competente">Competente</a>
+      <a href="#educatie">Educatie</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <section id="educatie">
-      <h2>Educație</h2>
-      <p>
-        <strong>Universitatea „Lucian Blaga” din Sibiu</strong><br>
-        Calculatoare și Tehnologia Informației<br>
-        <em>(2023 – prezent)</em>
-      </p>
-      <br>
-      <p>
-        <strong>Liceul „Gheorghe Surdu” din Brezoi</strong><br>
-        Științele Naturii — Diplomă de Bacalaureat<br>
-        <em>(2019 – 2023)</em>
-      </p>
-    </section>
+    <main class="content-grid">
+      <section class="main-column">
+        <section class="content-section" id="proiecte">
+          <div class="section-heading">
+            <p class="section-kicker">Ce merita vazut prima data</p>
+            <h2>Proiecte reprezentative</h2>
+          </div>
 
-    <section id="abilitati">
-      <h2>Abilități</h2>
-      <ul>
-        <li>C#/C++</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Excel</li>
-        <li>Word</li>
-        <li>PowerPoint</li>
-      </ul>
-    </section>
+          <article class="project-card featured">
+            <div class="project-top">
+              <span class="project-badge">Proiect principal</span>
+              <h3>PracticePal</h3>
+              <p class="project-subtitle">Aplicatie software pentru administrarea stagiilor de practica</p>
+            </div>
+            <p>
+              Am construit o aplicatie orientata pe roluri, prin care studentii, companiile si
+              administratorii facultatii pot gestiona intregul flux de practica: creare cont,
+              aprobare companii, publicare posturi, aplicare, evaluare, notare finala si raportare.
+            </p>
+            <ul class="project-points">
+              <li>Am lucrat pe o arhitectura Java 21 + Jakarta EE, cu Servlets, JSP, JPA si MySQL, organizata pe straturi clare pentru prezentare, logica de business si persistenta.</li>
+              <li>Am integrat functionalitati utile intr-un context real: profil student cu CV si fotografie, moderare joburi, import/export Excel, chat intern prin WebSocket si dashboard separat pentru fiecare rol.</li>
+              <li>Proiectul m-a ajutat sa inteleg mai bine separarea responsabilitatilor in cod, validarea datelor, securizarea fluxurilor si modelarea regulilor de business intr-un sistem mai amplu.</li>
+            </ul>
+            <div class="tech-list">
+              <span>Java 21</span>
+              <span>Jakarta EE</span>
+              <span>Servlets &amp; JSP</span>
+              <span>JPA</span>
+              <span>MySQL</span>
+              <span>Gradle</span>
+              <span>WebSocket</span>
+            </div>
+          </article>
 
-    <section id="proiecte">
-      <h2>Proiecte</h2>
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-badge alt">Aplicatie software</span>
+              <h3>SportMatch</h3>
+              <p class="project-subtitle">Platforma pentru organizarea meciurilor amicale intre jucatori</p>
+            </div>
+            <p>
+              Am dezvoltat o aplicatie in PHP si MySQL care ajuta utilizatorii sa gaseasca rapid
+              parteneri de joc si sa organizeze meciuri amicale pe mai multe sporturi, intr-un flux
+              mai clar decat grupurile clasice de mesagerie.
+            </p>
+            <ul class="project-points">
+              <li>Aplicatia acopera 9 sporturi si include camere de joc, cereri de inscriere, accept/reject, chat, notificari, profil public si feedback intre jucatori.</li>
+              <li>Am lucrat la logica de business pentru gestionarea locurilor, restrictionarea conflictelor intre camere, arhivarea meciurilor, istoricul participarilor si consistenta datelor.</li>
+              <li>Am folosit JavaScript vanilla, Google Maps API si validari de securitate de baza precum parole hash, token CSRF, prepared statements si controlul sesiunii.</li>
+            </ul>
+            <div class="tech-list">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Vanilla JS</span>
+              <span>HTML &amp; CSS</span>
+              <span>Google Maps API</span>
+              <span>CSRF &amp; auth</span>
+            </div>
+          </article>
 
-      <div class="project">
-        <h3>Joc „Nu te supăra, frate!”</h3>
-        <p>Am realizat o aplicație interactivă care reproduce jocul clasic „Nu te supăra, frate!”, dezvoltată în C++ Builder. Proiectul include o interfață grafică intuitivă, sistem de mutare a pionilor bazat pe valorile zarului și verificare automată a regulilor. De asemenea, am implementat o componentă Client–Server, care permite jucarea în rețea între mai multe calculatoare.</p>
-      </div>
+          <article class="project-card compact">
+            <div class="project-top">
+              <span class="project-badge subtle">Proiect suplimentar</span>
+              <h3>Joc "Nu te supara, frate!"</h3>
+              <p class="project-subtitle">Aplicatie desktop cu interfata grafica si componenta client-server</p>
+            </div>
+            <p>
+              Am realizat o versiune digitala a jocului clasic in C++ Builder, cu mutarea pionilor pe
+              baza zarului, validarea regulilor si posibilitatea de joc in retea intre mai multe
+              calculatoare.
+            </p>
+            <div class="tech-list">
+              <span>C++ Builder</span>
+              <span>GUI</span>
+              <span>Client-Server</span>
+            </div>
+          </article>
+        </section>
 
-      <div class="project">
-        <h3>Proiect 2 — SportMatch (Website web interactiv)</h3>
-        <p>Am dezvoltat platforma SportMatch, o aplicație web creată în PHP, JavaScript și MySQL, care ajută utilizatorii să își găsească parteneri de joc la fotbal, tenis și baschet. Site-ul permite crearea și administrarea camerelor de meci, căutarea altor jucători în funcție de oraș, dată și teren, precum și integrarea cu Google Maps API pentru selectarea locațiilor sportive.</p>
-      </div>
-    </section>
+        <section class="content-section" id="competente">
+          <div class="section-heading">
+            <p class="section-kicker">Cum lucrez</p>
+            <h2>Competente relevante pentru un rol de software engineering</h2>
+          </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>📞 0757 321 741</li>
-        <li>✉️ stefanantonio.bogorodea@ulbsibiu.ro (Facultate)</li>
-        <li>✉️ bogorodea.stefanantonio@gmail.com (Personal)</li>
-      </ul>
-    </section>
+          <div class="strength-grid">
+            <article class="strength-card">
+              <h3>Logica si structurarea codului</h3>
+              <p>Imi place sa construiesc aplicatii in care responsabilitatile sunt separate clar si in care fluxurile importante pot fi urmarite si extinse usor.</p>
+            </article>
+            <article class="strength-card">
+              <h3>Adaptare pe tipuri diferite de aplicatii</h3>
+              <p>Am lucrat pe proiecte web, desktop si client-server, ceea ce m-a ajutat sa ma adaptez mai usor la cerinte si stack-uri diferite.</p>
+            </article>
+            <article class="strength-card">
+              <h3>Baze de date si validare</h3>
+              <p>Am folosit MySQL in proiecte cu relatii multiple, istoric, arhivare si operatii care trebuie tratate atent la nivel de consistenta si corectitudine.</p>
+            </article>
+          </div>
 
-    <footer>
-      © <span id="year"></span> Bogorodea Stefan-Antonio — CV personal
+          <div class="skill-groups">
+            <div class="skill-group">
+              <p class="skill-label">Limbaje</p>
+              <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <p class="skill-label">Tehnologii software</p>
+              <ul>
+                <li>Jakarta EE</li>
+                <li>Servlets &amp; JSP</li>
+                <li>Client-Server</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <p class="skill-label">Instrumente</p>
+              <ul>
+                <li>Gradle</li>
+                <li>Excel</li>
+                <li>Word</li>
+                <li>PowerPoint</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="side-column">
+        <section class="panel" id="educatie">
+          <div class="section-heading small">
+            <p class="section-kicker">Parcurs academic</p>
+            <h2>Educatie</h2>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-period">2023 - prezent</p>
+            <h3>Universitatea "Lucian Blaga" din Sibiu</h3>
+            <p>Calculatoare si Tehnologia Informatiei</p>
+            <p class="muted">Student in anul 3, interesat de software engineering, programare si proiecte aplicate.</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-period">2019 - 2023</p>
+            <h3>Liceul "Gheorghe Surdu" din Brezoi</h3>
+            <p>Stiintele Naturii</p>
+            <p class="muted">Diploma de Bacalaureat.</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading small">
+            <p class="section-kicker">Focus actual</p>
+            <h2>Ce vreau sa dezvolt mai departe</h2>
+          </div>
+          <ul class="focus-list">
+            <li>Experienta practica intr-o echipa de development, unde pot invata din proiecte reale si din procese tehnice bine organizate.</li>
+            <li>Dezvoltarea competentelor de programare in Java si C++, cu accent pe cod clar, logic si usor de intretinut.</li>
+            <li>Lucru mai avansat cu debugging, structurarea aplicatiilor si standarde de calitate in cod.</li>
+          </ul>
+        </section>
+
+        <section class="panel" id="contact">
+          <div class="section-heading small">
+            <p class="section-kicker">Date de contact</p>
+            <h2>Contact</h2>
+          </div>
+          <ul class="contact-list">
+            <li>
+              <span>Telefon</span>
+              <a href="tel:+40757321741">0757 321 741</a>
+            </li>
+            <li>
+              <span>Email personal</span>
+              <a href="mailto:bogorodea.stefanantonio@gmail.com">bogorodea.stefanantonio@gmail.com</a>
+            </li>
+            <li>
+              <span>Email facultate</span>
+              <a href="mailto:stefanantonio.bogorodea@ulbsibiu.ro">stefanantonio.bogorodea@ulbsibiu.ro</a>
+            </li>
+            <li>
+              <span>GitHub personal</span>
+              <a href="https://github.com/StefanAntonio10" target="_blank" rel="noreferrer">github.com/StefanAntonio10</a>
+            </li>
+            <li>
+              <span>GitHub facultate</span>
+              <a href="https://github.com/Antonio1812" target="_blank" rel="noreferrer">github.com/Antonio1812</a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="page-footer">
+      <p>&copy; <span id="year"></span> Bogorodea Stefan-Antonio. CV online.</p>
     </footer>
   </div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
