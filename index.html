@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bogorodea Stefan-Antonio | CV</title>
+  <title data-i18n="documentTitle">Bogorodea Stefan-Antonio | CV</title>
   <meta
     name="description"
-    content="CV online pentru Bogorodea Stefan-Antonio, student in anul 3 la Calculatoare si Tehnologia Informatiei, cu proiecte software in Java, C++ si PHP."
+    data-i18n-content="metaDescription"
+    content="CV online pentru Bogorodea Stefan-Antonio, student CTI interesat de roluri junior sau intern in software si data, cu proiecte in Java, PHP, MySQL, SQL si Excel."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,90 +21,98 @@
   <div class="page-shell">
     <header class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">CV online</p>
+        <p class="eyebrow" data-i18n="eyebrow">CV online</p>
         <h1>Bogorodea Stefan-Antonio</h1>
-        <p class="hero-role">Student in anul 3 la Calculatoare si Tehnologia Informatiei</p>
-        <p class="hero-summary">
-          Sunt interesat de dezvoltare software si de modul in care codul bine structurat rezolva
-          probleme concrete. In proiectele universitare am lucrat cu aplicatii web, desktop si
-          client-server, punand accent pe logica, modelarea datelor, validare si organizarea clara
-          a codului.
+        <p class="hero-role" data-i18n="heroRole">Student in anul 3 la Calculatoare si Tehnologia Informatiei</p>
+        <p class="hero-summary" data-i18n="heroSummary">
+          Caut un rol junior / intern in software sau data, unde pot contribui la proiecte reale si
+          sa imi dezvolt mai departe Java, C++, debugging-ul si standardele de calitate in cod. Am
+          lucrat la proiecte web, desktop si client-server cu Java, PHP, MySQL, SQL si Excel, cu
+          accent pe validare, modelarea datelor si organizarea clara a codului.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="mailto:bogorodea.stefanantonio@gmail.com">Contact rapid</a>
-          <a class="button button-secondary" href="https://github.com/StefanAntonio10" target="_blank" rel="noreferrer">GitHub personal</a>
-          <a class="button button-secondary" href="https://github.com/Antonio1812" target="_blank" rel="noreferrer">GitHub facultate</a>
+          <a class="button button-primary" href="mailto:bogorodea.stefanantonio@gmail.com" data-i18n="contactQuick">Contact rapid</a>
+          <a class="button button-secondary" href="https://github.com/StefanAntonio10" target="_blank" rel="noreferrer" data-i18n="githubPersonal">GitHub personal</a>
+          <a class="button button-secondary" href="https://github.com/Antonio1812" target="_blank" rel="noreferrer" data-i18n="githubFaculty">GitHub facultate</a>
+          <button class="button button-primary lang-toggle" id="lang-toggle" type="button" aria-label="Comuta limba in engleza">EN</button>
         </div>
 
         <ul class="hero-metrics">
           <li>
-            <strong>3 proiecte relevante</strong>
-            <span>experienta in aplicatii web, desktop si client-server</span>
+            <strong data-i18n="metric1Title">4 proiecte relevante</strong>
+            <span data-i18n="metric1Text">experienta in aplicatii web, desktop, client-server si data</span>
           </li>
           <li>
-            <strong>Java, C++, PHP</strong>
-            <span>limbaje folosite in proiecte tehnice si academice</span>
+            <strong data-i18n="metric2Title">Java, PHP, MySQL</strong>
+            <span data-i18n="metric2Text">stack folosit in proiecte tehnice si universitare</span>
           </li>
           <li>
-            <strong>Focus pe software engineering</strong>
-            <span>interes pentru logica, structura, debugging si cod usor de extins</span>
+            <strong data-i18n="metric3Title">Software &amp; Data</strong>
+            <span data-i18n="metric3Text">focus pe validare, debugging si code quality</span>
           </li>
         </ul>
       </div>
 
       <div class="hero-panel">
-        <img src="profil.jpeg" alt="Portret Bogorodea Stefan-Antonio" onerror="this.src='https://via.placeholder.com/300x360?text=Foto'">
+        <img id="profile-image" src="profil.jpeg" alt="Portret Bogorodea Stefan-Antonio" data-i18n-alt="profileAlt">
         <div class="identity-card">
-          <p class="panel-label">Date rapide</p>
+          <p class="panel-label" data-i18n="quickFactsLabel">Date rapide</p>
           <ul class="fact-list">
             <li>
-              <span>An de studiu</span>
-              <strong>III</strong>
+              <span data-i18n="studyYearLabel">An de studiu</span>
+              <strong data-i18n="studyYearValue">III</strong>
             </li>
             <li>
-              <span>Universitate</span>
-              <strong>ULBS</strong>
+              <span data-i18n="universityLabel">Universitate</span>
+              <strong data-i18n="universityValue">ULBS</strong>
             </li>
             <li>
-              <span>Focus tehnic</span>
-              <strong>Java, C++ si logica</strong>
+              <span data-i18n="technicalFocusLabel">Focus tehnic</span>
+              <strong data-i18n="technicalFocusValue">Java, PHP, SQL, C++</strong>
             </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <nav class="section-nav" aria-label="Navigare pagina">
-      <a href="#proiecte">Proiecte</a>
-      <a href="#competente">Competente</a>
-      <a href="#educatie">Educatie</a>
-      <a href="#contact">Contact</a>
+    <nav class="section-nav" aria-label="Navigare pagina" data-i18n-aria-label="sectionNavAria">
+      <a href="#proiecte" data-i18n="navProjects">Proiecte</a>
+      <a href="#mini-data" data-i18n="navMiniProject">Mini Data Project</a>
+      <a href="#competente" data-i18n="navSkills">Technical Skills</a>
+      <a href="#educatie" data-i18n="navEducation">Educatie</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+      <div class="section-nav-language" role="group" aria-label="Language switcher">
+        <a href="#" class="section-nav-language-link" data-language-link="ro" aria-label="Romana">RO</a>
+        <span class="section-nav-language-separator" aria-hidden="true">/</span>
+        <a href="#" class="section-nav-language-link" data-language-link="en" aria-label="English">EN</a>
+      </div>
     </nav>
 
     <main class="content-grid">
       <section class="main-column">
         <section class="content-section" id="proiecte">
           <div class="section-heading">
-            <p class="section-kicker">Ce merita vazut prima data</p>
-            <h2>Proiecte reprezentative</h2>
+            <p class="section-kicker" data-i18n="projectsKicker">Experienta practica</p>
+            <h2 data-i18n="projectsTitle">Proiecte</h2>
           </div>
 
           <article class="project-card featured">
             <div class="project-top">
-              <span class="project-badge">Proiect principal</span>
+              <span class="project-badge" data-i18n="project1Badge">Proiect principal</span>
               <h3>PracticePal</h3>
-              <p class="project-subtitle">Aplicatie software pentru administrarea stagiilor de practica</p>
+              <p class="project-subtitle" data-i18n="project1Subtitle">Managementul stagiilor de practica</p>
             </div>
-            <p>
-              Am construit o aplicatie orientata pe roluri, prin care studentii, companiile si
-              administratorii facultatii pot gestiona intregul flux de practica: creare cont,
-              aprobare companii, publicare posturi, aplicare, evaluare, notare finala si raportare.
+            <p data-i18n="project1Description">
+              Aplicatie orientata pe roluri pentru gestionarea fluxului complet de practica intre
+              studenti, companii si administratori.
             </p>
             <ul class="project-points">
-              <li>Am lucrat pe o arhitectura Java 21 + Jakarta EE, cu Servlets, JSP, JPA si MySQL, organizata pe straturi clare pentru prezentare, logica de business si persistenta.</li>
-              <li>Am integrat functionalitati utile intr-un context real: profil student cu CV si fotografie, moderare joburi, import/export Excel, chat intern prin WebSocket si dashboard separat pentru fiecare rol.</li>
-              <li>Proiectul m-a ajutat sa inteleg mai bine separarea responsabilitatilor in cod, validarea datelor, securizarea fluxurilor si modelarea regulilor de business intr-un sistem mai amplu.</li>
+              <li data-i18n="project1Point1">Java 21, Jakarta EE, Servlets, JSP, JPA si MySQL, organizate pe straturi clare de prezentare, business si persistenta.</li>
+              <li data-i18n="project1Point2">Fluxuri principale: creare cont, aprobare companii, publicare posturi, aplicare, evaluare si notare finala.</li>
+              <li data-i18n="project1Point3">Functionalitati: profil student cu CV si fotografie, moderare joburi, chat WebSocket si dashboard pe roluri.</li>
+              <li data-i18n="project1Point4">Modelare relationala MySQL, validare de date si constrangeri de integritate pentru consistenta pe fluxuri critice.</li>
+              <li data-i18n="project1Point5">Import/export Excel pentru raportare si centralizare.</li>
             </ul>
             <div class="tech-list">
               <span>Java 21</span>
@@ -118,19 +127,19 @@
 
           <article class="project-card">
             <div class="project-top">
-              <span class="project-badge alt">Aplicatie software</span>
+              <span class="project-badge alt" data-i18n="project2Badge">Aplicatie software</span>
               <h3>SportMatch</h3>
-              <p class="project-subtitle">Platforma pentru organizarea meciurilor amicale intre jucatori</p>
+              <p class="project-subtitle" data-i18n="project2Subtitle">Platforma pentru meciuri amicale intre jucatori</p>
             </div>
-            <p>
-              Am dezvoltat o aplicatie in PHP si MySQL care ajuta utilizatorii sa gaseasca rapid
-              parteneri de joc si sa organizeze meciuri amicale pe mai multe sporturi, intr-un flux
-              mai clar decat grupurile clasice de mesagerie.
+            <p data-i18n="project2Description">
+              Aplicatie PHP + MySQL pentru gasirea partenerilor de joc si organizarea meciurilor
+              amicale pe mai multe sporturi.
             </p>
             <ul class="project-points">
-              <li>Aplicatia acopera 9 sporturi si include camere de joc, cereri de inscriere, accept/reject, chat, notificari, profil public si feedback intre jucatori.</li>
-              <li>Am lucrat la logica de business pentru gestionarea locurilor, restrictionarea conflictelor intre camere, arhivarea meciurilor, istoricul participarilor si consistenta datelor.</li>
-              <li>Am folosit JavaScript vanilla, Google Maps API si validari de securitate de baza precum parole hash, token CSRF, prepared statements si controlul sesiunii.</li>
+              <li data-i18n="project2Point1">Suport pentru 9 sporturi, camere de joc, cereri de inscriere, accept/reject, chat, notificari, profiluri publice si feedback.</li>
+              <li data-i18n="project2Point2">Logica de business pentru locuri disponibile, conflicte intre camere, arhivarea meciurilor si istoricul participarilor.</li>
+              <li data-i18n="project2Point3">Structura relationala pentru utilizatori, camere, inscrieri si filtrarea datelor generate de utilizatori.</li>
+              <li data-i18n="project2Point4">JavaScript vanilla, Google Maps API, parole hash, token CSRF, prepared statements si control al sesiunii.</li>
             </ul>
             <div class="tech-list">
               <span>PHP</span>
@@ -144,15 +153,14 @@
 
           <article class="project-card compact">
             <div class="project-top">
-              <span class="project-badge subtle">Proiect suplimentar</span>
-              <h3>Joc "Nu te supara, frate!"</h3>
-              <p class="project-subtitle">Aplicatie desktop cu interfata grafica si componenta client-server</p>
+              <span class="project-badge subtle" data-i18n="project3Badge">Proiect academic</span>
+              <h3 data-i18n="project3Title">Joc "Nu te supara, frate!"</h3>
+              <p class="project-subtitle" data-i18n="project3Subtitle">Aplicatie desktop cu componenta client-server</p>
             </div>
-            <p>
-              Am realizat o versiune digitala a jocului clasic in C++ Builder, cu mutarea pionilor pe
-              baza zarului, validarea regulilor si posibilitatea de joc in retea intre mai multe
-              calculatoare.
-            </p>
+            <ul class="project-points">
+              <li data-i18n="project3Point1">Versiune digitala in C++ Builder, cu mutarea pionilor pe baza zarului si validarea regulilor.</li>
+              <li data-i18n="project3Point2">Joc in retea intre mai multe calculatoare.</li>
+            </ul>
             <div class="tech-list">
               <span>C++ Builder</span>
               <span>GUI</span>
@@ -161,56 +169,45 @@
           </article>
         </section>
 
-        <section class="content-section" id="competente">
+        <section class="content-section" id="mini-data">
           <div class="section-heading">
-            <p class="section-kicker">Cum lucrez</p>
-            <h2>Competente relevante pentru un rol de software engineering</h2>
+            <p class="section-kicker" data-i18n="miniProjectKicker">Practica pe date</p>
+            <h2 data-i18n="miniProjectSectionTitle">Mini Data Project</h2>
           </div>
 
-          <div class="strength-grid">
-            <article class="strength-card">
-              <h3>Logica si structurarea codului</h3>
-              <p>Imi place sa construiesc aplicatii in care responsabilitatile sunt separate clar si in care fluxurile importante pot fi urmarite si extinse usor.</p>
-            </article>
-            <article class="strength-card">
-              <h3>Adaptare pe tipuri diferite de aplicatii</h3>
-              <p>Am lucrat pe proiecte web, desktop si client-server, ceea ce m-a ajutat sa ma adaptez mai usor la cerinte si stack-uri diferite.</p>
-            </article>
-            <article class="strength-card">
-              <h3>Baze de date si validare</h3>
-              <p>Am folosit MySQL in proiecte cu relatii multiple, istoric, arhivare si operatii care trebuie tratate atent la nivel de consistenta si corectitudine.</p>
-            </article>
+          <article class="project-card compact">
+            <div class="project-top">
+              <span class="project-badge subtle" data-i18n="project4Badge">Mini proiect date</span>
+              <h3 data-i18n="project4Title">SQL &amp; Excel Data Analysis Project</h3>
+              <p class="project-subtitle" data-i18n="project4Subtitle">SQL, Excel, analiza de date</p>
+            </div>
+            <ul class="project-points">
+              <li data-i18n="project4Point1">Interogari SQL de baza pentru filtrare, agregare si validare pe un set de date public.</li>
+              <li data-i18n="project4Point2">Rapoarte simple in Excel pentru sumarizarea si prezentarea rezultatelor.</li>
+            </ul>
+            <div class="tech-list">
+              <span>SQL</span>
+              <span>MySQL</span>
+              <span>Excel</span>
+              <span>Data Analysis</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-section" id="competente">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="skillsKicker">Stack tehnic</p>
+            <h2 data-i18n="skillsTitle">Technical Skills</h2>
           </div>
 
           <div class="skill-groups">
-            <div class="skill-group">
-              <p class="skill-label">Limbaje</p>
+            <div class="skill-group full-width">
               <ul>
-                <li>C++</li>
-                <li>Java</li>
-                <li>C#</li>
-                <li>PHP</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <p class="skill-label">Tehnologii software</p>
-              <ul>
-                <li>Jakarta EE</li>
-                <li>Servlets &amp; JSP</li>
-                <li>Client-Server</li>
-                <li>MySQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <p class="skill-label">Instrumente</p>
-              <ul>
-                <li>Gradle</li>
-                <li>Excel</li>
-                <li>Word</li>
-                <li>PowerPoint</li>
+                <li data-i18n="technicalSkills1">Programming: Java, C++, C#, PHP, JavaScript</li>
+                <li data-i18n="technicalSkills2">Backend &amp; Web: Jakarta EE, Servlets &amp; JSP, JPA, REST APIs, WebSocket, HTML, CSS, client-server</li>
+                <li data-i18n="technicalSkills3">Databases &amp; Data: MySQL, SQL (SELECT, JOIN, GROUP BY), database schema design, data validation, integrity constraints</li>
+                <li data-i18n="technicalSkills4">Data work: Excel (data cleaning, formulas, pivot tables), reporting, basic data analysis</li>
+                <li data-i18n="technicalSkills5">Tools: Git, Gradle, Google Maps API, Word, PowerPoint</li>
               </ul>
             </div>
           </div>
@@ -220,61 +217,49 @@
       <aside class="side-column">
         <section class="panel" id="educatie">
           <div class="section-heading small">
-            <p class="section-kicker">Parcurs academic</p>
-            <h2>Educatie</h2>
+            <p class="section-kicker" data-i18n="educationKicker">Parcurs academic</p>
+            <h2 data-i18n="educationTitle">Educatie</h2>
           </div>
 
           <div class="timeline-item">
-            <p class="timeline-period">2023 - prezent</p>
+            <p class="timeline-period" data-i18n="timeline1Period">2023 - prezent</p>
             <h3>Universitatea "Lucian Blaga" din Sibiu</h3>
-            <p>Calculatoare si Tehnologia Informatiei</p>
-            <p class="muted">Student in anul 3, interesat de software engineering, programare si proiecte aplicate.</p>
+            <p data-i18n="timeline1Degree">Calculatoare si Tehnologia Informatiei</p>
+            <p class="muted" data-i18n="timeline1Description">Student in anul 3, interesat de software engineering, data si proiecte aplicate.</p>
           </div>
 
           <div class="timeline-item">
             <p class="timeline-period">2019 - 2023</p>
             <h3>Liceul "Gheorghe Surdu" din Brezoi</h3>
-            <p>Stiintele Naturii</p>
-            <p class="muted">Diploma de Bacalaureat.</p>
+            <p data-i18n="timeline2Degree">Stiintele Naturii</p>
+            <p class="muted" data-i18n="timeline2Description">Diploma de Bacalaureat.</p>
           </div>
-        </section>
-
-        <section class="panel">
-          <div class="section-heading small">
-            <p class="section-kicker">Focus actual</p>
-            <h2>Ce vreau sa dezvolt mai departe</h2>
-          </div>
-          <ul class="focus-list">
-            <li>Experienta practica intr-o echipa de development, unde pot invata din proiecte reale si din procese tehnice bine organizate.</li>
-            <li>Dezvoltarea competentelor de programare in Java si C++, cu accent pe cod clar, logic si usor de intretinut.</li>
-            <li>Lucru mai avansat cu debugging, structurarea aplicatiilor si standarde de calitate in cod.</li>
-          </ul>
         </section>
 
         <section class="panel" id="contact">
           <div class="section-heading small">
-            <p class="section-kicker">Date de contact</p>
-            <h2>Contact</h2>
+            <p class="section-kicker" data-i18n="contactKicker">Date de contact</p>
+            <h2 data-i18n="contactTitle">Contact</h2>
           </div>
           <ul class="contact-list">
             <li>
-              <span>Telefon</span>
+              <span data-i18n="phoneLabel">Telefon</span>
               <a href="tel:+40757321741">0757 321 741</a>
             </li>
             <li>
-              <span>Email personal</span>
+              <span data-i18n="personalEmailLabel">Email personal</span>
               <a href="mailto:bogorodea.stefanantonio@gmail.com">bogorodea.stefanantonio@gmail.com</a>
             </li>
             <li>
-              <span>Email facultate</span>
+              <span data-i18n="facultyEmailLabel">Email facultate</span>
               <a href="mailto:stefanantonio.bogorodea@ulbsibiu.ro">stefanantonio.bogorodea@ulbsibiu.ro</a>
             </li>
             <li>
-              <span>GitHub personal</span>
+              <span data-i18n="personalGithubLabel">GitHub personal</span>
               <a href="https://github.com/StefanAntonio10" target="_blank" rel="noreferrer">github.com/StefanAntonio10</a>
             </li>
             <li>
-              <span>GitHub facultate</span>
+              <span data-i18n="facultyGithubLabel">GitHub facultate</span>
               <a href="https://github.com/Antonio1812" target="_blank" rel="noreferrer">github.com/Antonio1812</a>
             </li>
           </ul>
@@ -283,12 +268,287 @@
     </main>
 
     <footer class="page-footer">
-      <p>&copy; <span id="year"></span> Bogorodea Stefan-Antonio. CV online.</p>
+      <p>&copy; <span id="year"></span> Bogorodea Stefan-Antonio. <span data-i18n="footerLabel">CV online.</span></p>
     </footer>
   </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const translations = {
+      ro: {
+        documentTitle: "Bogorodea Stefan-Antonio | CV",
+        metaDescription: "CV online pentru Bogorodea Stefan-Antonio, student CTI interesat de roluri junior sau intern in software si data, cu proiecte in Java, PHP, MySQL, SQL si Excel.",
+        eyebrow: "CV online",
+        heroRole: "Student in anul 3 la Calculatoare si Tehnologia Informatiei",
+        heroSummary: "Caut un rol junior / intern in software sau data, unde pot contribui la proiecte reale si sa imi dezvolt mai departe Java, C++, debugging-ul si standardele de calitate in cod. Am lucrat la proiecte web, desktop si client-server cu Java, PHP, MySQL, SQL si Excel, cu accent pe validare, modelarea datelor si organizarea clara a codului.",
+        contactQuick: "Contact rapid",
+        githubPersonal: "GitHub personal",
+        githubFaculty: "GitHub facultate",
+        metric1Title: "4 proiecte relevante",
+        metric1Text: "experienta in aplicatii web, desktop, client-server si data",
+        metric2Title: "Java, PHP, MySQL",
+        metric2Text: "stack folosit in proiecte tehnice si universitare",
+        metric3Title: "Software & Data",
+        metric3Text: "focus pe validare, debugging si code quality",
+        profileAlt: "Portret Bogorodea Stefan-Antonio",
+        quickFactsLabel: "Date rapide",
+        studyYearLabel: "An de studiu",
+        studyYearValue: "III",
+        universityLabel: "Universitate",
+        universityValue: "ULBS",
+        technicalFocusLabel: "Focus tehnic",
+        technicalFocusValue: "Java, PHP, SQL, C++",
+        sectionNavAria: "Navigare pagina",
+        navProjects: "Proiecte",
+        navMiniProject: "Mini Data Project",
+        navSkills: "Technical Skills",
+        navEducation: "Educatie",
+        navContact: "Contact",
+        projectsKicker: "Experienta practica",
+        projectsTitle: "Proiecte",
+        project1Badge: "Proiect principal",
+        project1Subtitle: "Managementul stagiilor de practica",
+        project1Description: "Aplicatie orientata pe roluri pentru gestionarea fluxului complet de practica intre studenti, companii si administratori.",
+        project1Point1: "Java 21, Jakarta EE, Servlets, JSP, JPA si MySQL, organizate pe straturi clare de prezentare, business si persistenta.",
+        project1Point2: "Fluxuri principale: creare cont, aprobare companii, publicare posturi, aplicare, evaluare si notare finala.",
+        project1Point3: "Functionalitati: profil student cu CV si fotografie, moderare joburi, chat WebSocket si dashboard pe roluri.",
+        project1Point4: "Modelare relationala MySQL, validare de date si constrangeri de integritate pentru consistenta pe fluxuri critice.",
+        project1Point5: "Import/export Excel pentru raportare si centralizare.",
+        project2Badge: "Aplicatie software",
+        project2Subtitle: "Platforma pentru meciuri amicale intre jucatori",
+        project2Description: "Aplicatie PHP + MySQL pentru gasirea partenerilor de joc si organizarea meciurilor amicale pe mai multe sporturi.",
+        project2Point1: "Suport pentru 9 sporturi, camere de joc, cereri de inscriere, accept/reject, chat, notificari, profiluri publice si feedback.",
+        project2Point2: "Logica de business pentru locuri disponibile, conflicte intre camere, arhivarea meciurilor si istoricul participarilor.",
+        project2Point3: "Structura relationala pentru utilizatori, camere, inscrieri si filtrarea datelor generate de utilizatori.",
+        project2Point4: "JavaScript vanilla, Google Maps API, parole hash, token CSRF, prepared statements si control al sesiunii.",
+        project3Badge: "Proiect academic",
+        project3Title: "Joc \"Nu te supara, frate!\"",
+        project3Subtitle: "Aplicatie desktop cu componenta client-server",
+        project3Description: "Am realizat o versiune digitala a jocului clasic in C++ Builder, cu mutarea pionilor pe baza zarului, validarea regulilor si posibilitatea de joc in retea intre mai multe calculatoare.",
+        project3Point1: "Versiune digitala in C++ Builder, cu mutarea pionilor pe baza zarului si validarea regulilor.",
+        project3Point2: "Joc in retea intre mai multe calculatoare.",
+        miniProjectKicker: "Practica pe date",
+        miniProjectSectionTitle: "Mini Data Project",
+        project4Badge: "Mini proiect date",
+        project4Title: "SQL & Excel Data Analysis Project",
+        project4Subtitle: "SQL, Excel, analiza de date",
+        project4Description: "Am folosit un set de date public pentru a exersa interogari SQL, agregari de baza si raportare simpla in Excel.",
+        project4Point1: "Interogari SQL de baza pentru filtrare, agregare si validare pe un set de date public.",
+        project4Point2: "Rapoarte simple in Excel pentru sumarizarea si prezentarea rezultatelor.",
+        project4Point3: "Am creat rapoarte simple in Excel pentru sintetizarea rezultatelor.",
+        skillsKicker: "Stack tehnic",
+        skillsTitle: "Technical Skills",
+        technicalSkills1: "Programming: Java, C++, C#, PHP, JavaScript",
+        technicalSkills2: "Backend & Web: Jakarta EE, Servlets & JSP, JPA, REST APIs, WebSocket, HTML, CSS, client-server",
+        technicalSkills3: "Databases & Data: MySQL, SQL (SELECT, JOIN, GROUP BY), database schema design, data validation, integrity constraints",
+        technicalSkills4: "Data work: Excel (data cleaning, formulas, pivot tables), reporting, basic data analysis",
+        technicalSkills5: "Tools: Git, Gradle, Google Maps API, Word, PowerPoint",
+        strength1Title: "Logica si structurarea codului",
+        strength1Description: "Imi place sa construiesc aplicatii in care responsabilitatile sunt separate clar si in care fluxurile importante pot fi urmarite si extinse usor.",
+        strength2Title: "Adaptare pe tipuri diferite de aplicatii",
+        strength2Description: "Am lucrat pe proiecte web, desktop si client-server, ceea ce m-a ajutat sa ma adaptez mai usor la cerinte si stack-uri diferite.",
+        strength3Title: "Baze de date si validare",
+        strength3Description: "Am folosit MySQL in proiecte cu relatii multiple, istoric, arhivare si operatii care trebuie tratate atent la nivel de consistenta si corectitudine.",
+        languagesLabel: "Limbaje",
+        technologiesLabel: "Tehnologii software",
+        toolsLabel: "Instrumente",
+        dataDatabasesLabel: "Data & Databases",
+        dataSkill1: "SQL (SELECT, JOIN, GROUP BY - basic querying)",
+        dataSkill2: "MySQL (relational databases, schema design)",
+        dataSkill3: "Data handling & validation",
+        dataSkill4: "Basic data analysis concepts",
+        dataSkill5: "Excel (data cleaning, basic formulas, pivot tables)",
+        educationKicker: "Parcurs academic",
+        educationTitle: "Educatie",
+        timeline1Period: "2023 - prezent",
+        timeline1Degree: "Calculatoare si Tehnologia Informatiei",
+        timeline1Description: "Student in anul 3, interesat de software engineering, data si proiecte aplicate.",
+        timeline2Degree: "Stiintele Naturii",
+        timeline2Description: "Diploma de Bacalaureat.",
+        focusKicker: "Focus actual",
+        focusTitle: "Ce vreau sa dezvolt mai departe",
+        focus1: "Experienta practica intr-o echipa de development, unde pot invata din proiecte reale si din procese tehnice bine organizate.",
+        focus2: "Dezvoltarea competentelor de programare in Java si C++, cu accent pe cod clar, logic si usor de intretinut.",
+        focus3: "Lucru mai avansat cu debugging, structurarea aplicatiilor si standarde de calitate in cod.",
+        contactKicker: "Date de contact",
+        contactTitle: "Contact",
+        phoneLabel: "Telefon",
+        personalEmailLabel: "Email personal",
+        facultyEmailLabel: "Email facultate",
+        personalGithubLabel: "GitHub personal",
+        facultyGithubLabel: "GitHub facultate",
+        footerLabel: "CV online."
+      },
+      en: {
+        documentTitle: "Bogorodea Stefan-Antonio | Resume",
+        metaDescription: "Online resume for Bogorodea Stefan-Antonio, a Computer Science student targeting junior or intern software and data roles, with projects in Java, PHP, MySQL, SQL and Excel.",
+        eyebrow: "Online Resume",
+        heroRole: "Third-year Computer Science and Information Technology student",
+        heroSummary: "I am seeking a junior / intern role in software or data, where I can contribute to real-world projects and further develop my skills in Java, C++, debugging, and code quality. I have worked on web, desktop, and client-server projects using Java, PHP, MySQL, SQL, and Excel, with a focus on data validation, data modeling, and clean code structure.",
+        contactQuick: "Quick contact",
+        githubPersonal: "Personal GitHub",
+        githubFaculty: "University GitHub",
+        metric1Title: "4 relevant projects",
+        metric1Text: "experience in web, desktop, client-server, and data applications",
+        metric2Title: "Java, PHP, MySQL",
+        metric2Text: "technology stack used in academic and personal projects",
+        metric3Title: "Software & Data",
+        metric3Text: "focus on validation, debugging and code quality",
+        profileAlt: "Portrait of Bogorodea Stefan-Antonio",
+        quickFactsLabel: "Quick facts",
+        studyYearLabel: "Year of study",
+        studyYearValue: "3rd",
+        universityLabel: "University",
+        universityValue: "ULBS",
+        technicalFocusLabel: "Technical focus",
+        technicalFocusValue: "Java, PHP, SQL, C++",
+        sectionNavAria: "Page navigation",
+        navProjects: "Projects",
+        navMiniProject: "Mini Data Project",
+        navSkills: "Technical Skills",
+        navEducation: "Education",
+        navContact: "Contact",
+        projectsKicker: "Practical experience",
+        projectsTitle: "Projects",
+        project1Badge: "Main project",
+        project1Subtitle: "Internship management application",
+        project1Description: "Role-based application for managing the full internship process between students, companies, and administrators.",
+        project1Point1: "Java 21, Jakarta EE, Servlets, JSP, JPA, and MySQL, structured into presentation, business, and persistence layers.",
+        project1Point2: "Core flows include account creation, company approval, job posting, applications, evaluation, and final grading.",
+        project1Point3: "Features: student profile with CV and photo, job moderation, WebSocket chat and role-based dashboards.",
+        project1Point4: "Relational MySQL schema design, data validation, and integrity constraints for consistency across critical flows.",
+        project1Point5: "Excel import/export for reporting and centralization.",
+        project2Badge: "Software application",
+        project2Subtitle: "Platform for friendly matches between players",
+        project2Description: "PHP and MySQL application for finding teammates and organizing friendly matches across multiple sports.",
+        project2Point1: "Support for 9 sports, game rooms, join requests, accept/reject actions, chat, notifications, public profiles and feedback.",
+        project2Point2: "Business logic for available seats, room conflicts, match archiving and participation history.",
+        project2Point3: "Relational structure for users, rooms, sign-ups, and filtering user-generated data.",
+        project2Point4: "Vanilla JavaScript, Google Maps API, hashed passwords, CSRF tokens, prepared statements and session control.",
+        project3Badge: "Academic project",
+        project3Title: "Board game \"Nu te supara, frate!\"",
+        project3Subtitle: "Desktop application with client-server component",
+        project3Description: "I built a digital version of the classic board game in C++ Builder, with token movement based on dice rolls, rule validation and network play between multiple computers.",
+        project3Point1: "Digital C++ Builder version with dice-based token movement and rule validation.",
+        project3Point2: "Network play between multiple computers.",
+        miniProjectKicker: "Data practice",
+        miniProjectSectionTitle: "Mini Data Project",
+        project4Badge: "Data mini project",
+        project4Title: "SQL & Excel Data Analysis Project",
+        project4Subtitle: "SQL, Excel, data analysis",
+        project4Description: "I used a public dataset to practice SQL queries, basic aggregations and simple Excel reporting.",
+        project4Point1: "SQL queries for filtering, aggregation, and validation on a public dataset.",
+        project4Point2: "Excel reports for summarizing and presenting results.",
+        project4Point3: "I created simple Excel reports to summarize the results.",
+        skillsKicker: "Technical stack",
+        skillsTitle: "Technical Skills",
+        technicalSkills1: "Programming: Java, C++, C#, PHP, JavaScript",
+        technicalSkills2: "Backend & Web: Jakarta EE, Servlets & JSP, JPA, REST APIs, WebSocket, HTML, CSS, client-server",
+        technicalSkills3: "Databases & Data: MySQL, SQL (SELECT, JOIN, GROUP BY), database schema design, data validation, integrity constraints",
+        technicalSkills4: "Data work: Excel (data cleaning, formulas, pivot tables), reporting, basic data analysis",
+        technicalSkills5: "Tools: Git, Gradle, Google Maps API, Word, PowerPoint",
+        strength1Title: "Logic and code structure",
+        strength1Description: "I like building applications where responsibilities are clearly separated and where important flows can be followed and extended easily.",
+        strength2Title: "Adaptation to different application types",
+        strength2Description: "I worked on web, desktop and client-server projects, which helped me adapt more easily to different requirements and technology stacks.",
+        strength3Title: "Databases and validation",
+        strength3Description: "I used MySQL in projects with multiple relationships, history, archiving and operations that require careful handling for consistency and correctness.",
+        languagesLabel: "Languages",
+        technologiesLabel: "Software technologies",
+        toolsLabel: "Tools",
+        dataDatabasesLabel: "Data & Databases",
+        dataSkill1: "SQL (SELECT, JOIN, GROUP BY - basic querying)",
+        dataSkill2: "MySQL (relational databases, schema design)",
+        dataSkill3: "Data handling & validation",
+        dataSkill4: "Basic data analysis concepts",
+        dataSkill5: "Excel (data cleaning, basic formulas, pivot tables)",
+        educationKicker: "Academic path",
+        educationTitle: "Education",
+        timeline1Period: "2023 - present",
+        timeline1Degree: "Computer Science and Information Technology",
+        timeline1Description: "Third-year student interested in software engineering, data, and applied projects.",
+        timeline2Degree: "Natural Sciences",
+        timeline2Description: "Baccalaureate diploma.",
+        focusKicker: "Current focus",
+        focusTitle: "What I want to develop further",
+        focus1: "Hands-on experience in a development team where I can learn from real projects and from well-structured technical processes.",
+        focus2: "Further development of my programming skills in Java and C++, with emphasis on clear, logical and maintainable code.",
+        focus3: "More advanced work with debugging, application structure and code quality standards.",
+        contactKicker: "Contact details",
+        contactTitle: "Contact",
+        phoneLabel: "Phone",
+        personalEmailLabel: "Personal email",
+        facultyEmailLabel: "University email",
+        personalGithubLabel: "Personal GitHub",
+        facultyGithubLabel: "University GitHub",
+        footerLabel: "Online resume."
+      }
+    };
+
+    const textNodes = document.querySelectorAll("[data-i18n]");
+    const contentNodes = document.querySelectorAll("[data-i18n-content]");
+    const altNodes = document.querySelectorAll("[data-i18n-alt]");
+    const ariaNodes = document.querySelectorAll("[data-i18n-aria-label]");
+    const languageButton = document.getElementById("lang-toggle");
+    const languageLinks = document.querySelectorAll("[data-language-link]");
+    const profileImage = document.getElementById("profile-image");
+
+    function applyLanguage(lang) {
+      const dictionary = translations[lang];
+      const nextLanguage = lang === "ro" ? "en" : "ro";
+
+      document.documentElement.lang = lang;
+
+      textNodes.forEach((node) => {
+        node.textContent = dictionary[node.dataset.i18n];
+      });
+
+      contentNodes.forEach((node) => {
+        node.setAttribute("content", dictionary[node.dataset.i18nContent]);
+      });
+
+      altNodes.forEach((node) => {
+        node.setAttribute("alt", dictionary[node.dataset.i18nAlt]);
+      });
+
+      ariaNodes.forEach((node) => {
+        node.setAttribute("aria-label", dictionary[node.dataset.i18nAriaLabel]);
+      });
+
+      languageButton.textContent = nextLanguage.toUpperCase();
+      languageButton.setAttribute(
+        "aria-label",
+        lang === "ro" ? "Comuta limba in engleza" : "Switch language to Romanian"
+      );
+
+      languageLinks.forEach((link) => {
+        const isActive = link.dataset.languageLink === lang;
+        link.setAttribute("aria-current", isActive ? "true" : "false");
+      });
+
+      localStorage.setItem("site-language", lang);
+    }
+
+    profileImage.addEventListener("error", () => {
+      const fallbackText = document.documentElement.lang === "en" ? "Photo" : "Foto";
+      profileImage.src = "https://via.placeholder.com/300x360?text=" + encodeURIComponent(fallbackText);
+    });
+
+    languageButton.addEventListener("click", () => {
+      const nextLanguage = document.documentElement.lang === "ro" ? "en" : "ro";
+      applyLanguage(nextLanguage);
+    });
+
+    languageLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        applyLanguage(link.dataset.languageLink);
+      });
+    });
+
+    const savedLanguage = localStorage.getItem("site-language");
+    applyLanguage(savedLanguage === "en" ? "en" : "ro");
   </script>
 </body>
 </html>
