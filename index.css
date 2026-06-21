@@ -130,7 +130,7 @@ img {
 
 .hero-actions {
   display: grid;
-  grid-template-columns: minmax(170px, 180px) minmax(0, 1fr) minmax(0, 1fr) 96px;
+  grid-template-columns: minmax(150px, 180px) repeat(2, minmax(0, 1fr)) 96px;
   gap: 14px;
   align-items: stretch;
   margin-top: 28px;
@@ -208,28 +208,40 @@ img {
 }
 
 .hero-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   gap: 14px;
   list-style: none;
   margin: 32px 0 0;
   padding: 0;
+  width: 100%;
 }
 
 .hero-metrics li {
   display: flex;
   flex-direction: column;
+  flex: 1 1 0;
   padding: 18px;
-  min-height: 148px;
+  min-height: 136px;
   border: 1px solid rgba(247, 242, 234, 0.12);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(8px);
 }
 
+.hero-metrics li:first-child {
+  flex: 0 1 276px;
+}
+
+.hero-metrics li:nth-child(2) {
+  flex: 1 1 420px;
+  background:
+    linear-gradient(135deg, rgba(247, 242, 234, 0.1), rgba(47, 124, 124, 0.12)),
+    rgba(255, 255, 255, 0.06);
+}
+
 .hero-metrics strong {
   display: block;
-  min-height: 2.7em;
+  min-height: 0;
   font-size: 1.02rem;
   color: #fff6ec;
 }
@@ -237,10 +249,18 @@ img {
 .hero-metrics span {
   display: block;
   margin-top: 8px;
-  min-height: 5.2em;
+  min-height: 0;
   font-size: 0.88rem;
   line-height: 1.55;
   color: rgba(247, 242, 234, 0.72);
+}
+
+.hero-metrics li:nth-child(2) span {
+  max-width: 520px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: rgba(247, 242, 234, 0.82);
 }
 
 .hero-panel {
@@ -777,6 +797,15 @@ img {
   .skill-groups,
   .side-column {
     grid-template-columns: 1fr;
+  }
+
+  .hero-metrics {
+    flex-direction: column;
+  }
+
+  .hero-metrics li:first-child,
+  .hero-metrics li:nth-child(2) {
+    flex-basis: auto;
   }
 
   .hero-panel {
